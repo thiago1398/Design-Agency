@@ -1,0 +1,106 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+  margin-top: 50px;
+}
+
+span#creative{
+  color: midnightblue;
+}
+div.leftcard{
+  display: inline-block;
+  width: 45%;
+  
+}
+div.leftcard>img{
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 50px;
+}
+
+div.rightcard{
+ 
+  float: right;
+  width: 45%;
+}
+div.rightcard>img{
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 50px;
+  
+}
+@media (min-width:319px) and (max-width:480px){
+  div.leftcard{
+    display: block;
+    clear: left;
+    width: 100%;
+  }
+  div.rightcard{
+    display: block;
+    width: 100%;
+    clear: right;
+  }
+  div.main>h1{
+    font-size: 4em;
+  }
+  img.logo{
+    width: 100px;
+  }
+  div.leftcard>img,div.rightcard>img{
+    width: 100%;
+    margin-bottom: 10px;
+    clear: left;
+  }
+  div.leftcard>p,div.rightcard>p{
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width:481px) and (max-width:1200px){
+  div.leftcard{
+    display: inline-block;
+    
+    
+  }
+  div.leftcard>img,div.rightcard>img{
+    width: 100%;
+    height: 150px;
+  }
+  div.rightcard>p{
+    font-size: 1em;
+  }
+}
+@media (min-width:1201px) and (max-width:1600px){
+  div.leftcard{
+    display: inline-block;
+    
+  }
+  div.leftcard>img{
+    width: 300px;
+  }
+  div.rightcard{
+    display: inline-block;
+  }
+
+}
+@media (min-width:1601px){
+
+}
